@@ -56,3 +56,8 @@ class hstngr_widget extends WP_Widget
     }
     
 }
+
+function hstngr_register_widget() {
+    register_widget( 'hstngr_widget' );
+}
+add_action( 'widgets_init', 'hstngr_register_widget' );
